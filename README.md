@@ -65,7 +65,11 @@ step 1)  search on desktop
  ---------------------------Branching----------------------
  
 git branch			# List branches
+
 git branch <branch_name>        # Create new branch
+
 git checkout <branch_name>      # Switch to branch
+
 git checkout -b <branch_name>   # Create & switch to new branch
+
 git merge <branch_name>         # Merge a branch into current
