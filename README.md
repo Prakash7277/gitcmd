@@ -63,7 +63,8 @@ step 1)  search on desktop
      10) git config --global user.email abc@gmail.com
 
  ---------------------------Branching----------------------
-git branch                      # List branches
+ 
+git branch			# List branches
 git branch <branch_name>        # Create new branch
 git checkout <branch_name>      # Switch to branch
 git checkout -b <branch_name>   # Create & switch to new branch
