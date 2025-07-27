@@ -73,3 +73,55 @@ git checkout <branch_name>      # Switch to branch
 git checkout -b <branch_name>   # Create & switch to new branch
 
 git merge <branch_name>         # Merge a branch into current
+
+
+------------------------------------------local all cmd-------------------------------------------------------------------------
+
+pwd
+# Print the current working directory
+
+cd /D
+# Change to D: drive (Windows)
+
+mkdir GitDemo
+# Create a new folder named GitDemo
+
+cd GitDemo
+# Enter the GitDemo folder
+
+touch index.html
+# Create an empty index.html file
+
+ls -a
+# List all files, including hidden ones like .git
+
+git status
+# Check git tracking status (shows untracked files or changes)
+
+git init
+# Initialize a new local Git repository in the folder
+
+git add .
+# Add all files to the staging area
+
+git commit -m "first commit"
+# Commit staged files with a message
+
+git config --global user.name "Your Name"
+# Set global Git username
+
+git config --global user.email "you@example.com"
+# Set global Git email
+
+git remote add origin https://github.com/your-username/your-repo.git
+# Link your local repo to GitHub
+
+git push -u origin master
+# Push to GitHub and set tracking for master (use `main` if your branch is `main`)
+
+git config --global --unset user.name
+# Remove the global username
+
+git config --global --unset user.email
+# Remove the global email
+
