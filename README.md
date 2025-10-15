@@ -75,6 +75,14 @@ git checkout -b <branch_name>   # Create & switch to new branch
 git merge <branch_name>         # Merge a branch into current
 
 -------------------------------------------------------------------------------------
+# Create a new HTML file
+touch index.html
+
+# Add initial content
+echo "<h1>Hello from Docker!</h1>" > index.html
+
+# Append another line
+echo "<p>Welcome to my web app!</p>" >> index.html
 
 ## 🧠 Git Commands
 - `git diff` → See changes before commit  
