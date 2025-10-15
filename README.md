@@ -100,23 +100,6 @@ docker build -t mywebapp4 .
 docker run -d -p 8080:80 mywebapp4
 
 http://localhost:8080
----------------see the differences (changes)------------------
-git diff
----------------To see hidden files including the .git folder:-------
-ls -a
---------------shows the commit history of your Git repository----------------
-git log
----------------------------docker---------------------------------------------
-mkdir docker-webapp4
-cd docker-webapp4
-notepad index.html
-notepad Dockerfile
 
-FROM nginx
-COPY index.html /usr/share/nginx/html
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
-
-docker build -t mywebapp4 
 docker run -d -p 8080:80 mywebapp4
 http://localhost:8080
